@@ -1,0 +1,69 @@
+19:24:18 **** Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "002Add.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\suley\OneDrive\Belgeler\Embedded-C\My_workspace\target\002Add\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002Add.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002Add.elf
+ 
+arm-none-eabi-size   002Add.elf 
+arm-none-eabi-objdump -h -S  002Add.elf  > "002Add.list"
+arm-none-eabi-objcopy  -O binary  002Add.elf  "002Add.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002Add.bin
+ 
+Finished building: 002Add.list
+ 
+19:25:35 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+19:29:03 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+19:31:40 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+19:32:49 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+19:34:03 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+11:26:33 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 
+11:26:55 **** Incremental Build of configuration Debug for project 002Add ****
+make -j8 all 
+arm-none-eabi-size   002Add.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4992	    116	   1588	   6696	   1a28	002Add.elf
+Finished building: default.size.stdout
+ 

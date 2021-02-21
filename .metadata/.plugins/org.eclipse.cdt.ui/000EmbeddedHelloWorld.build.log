@@ -1,0 +1,14 @@
+22:52:36 **** Incremental Build of configuration Debug for project 000EmbeddedHelloWorld ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "000EmbeddedHelloWorld.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\suley\OneDrive\Belgeler\Embedded-C\My_workspace\target\000EmbeddedHelloWorld\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000EmbeddedHelloWorld.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.5.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\bin\ld.exe: error: Src/syscalls.o uses VFP register arguments, 000EmbeddedHelloWorld.elf does not
+c:\st\stm32cubeide_1.5.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\bin\ld.exe: failed to merge target specific data of file Src/syscalls.o
+c:\st\stm32cubeide_1.5.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\bin\ld.exe: error: Src/sysmem.o uses VFP register arguments, 000EmbeddedHelloWorld.elf does not
+c:\st\stm32cubeide_1.5.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\bin\ld.exe: failed to merge target specific data of file Src/sysmem.o
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:57: 000EmbeddedHelloWorld.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+22:52:36 Build Failed. 5 errors, 0 warnings. (took 769ms)
+
