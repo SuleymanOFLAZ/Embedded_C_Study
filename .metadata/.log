@@ -437,3 +437,6 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-02-21 22:20:40.216
 !MESSAGE Indexed '003InternalLEDs' (3 sources, 52 headers) in 1.26 sec: 1,920 declarations; 2,733 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.043%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-23 17:49:20.521
+!MESSAGE Indexed '004led_toggle_bitfields' (3 sources, 52 headers) in 2.86 sec: 1,920 declarations; 2,733 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.043%)

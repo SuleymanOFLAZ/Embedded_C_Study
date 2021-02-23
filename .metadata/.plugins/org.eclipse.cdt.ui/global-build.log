@@ -1,24 +1,24 @@
-20:22:34 **** Incremental Build of configuration Debug for project 003InternalLEDs ****
+18:37:44 **** Incremental Build of configuration Debug for project 004led_toggle_bitfields ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "003InternalLEDs.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\suley\OneDrive\Belgeler\Embedded-C\My_workspace\target\003InternalLEDs\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003InternalLEDs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 003InternalLEDs.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "004led_toggle_bitfields.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\suley\OneDrive\Belgeler\Embedded-C\My_workspace\target\004led_toggle_bitfields\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004led_toggle_bitfields.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004led_toggle_bitfields.elf
  
-arm-none-eabi-objdump -h -S  003InternalLEDs.elf  > "003InternalLEDs.list"
-arm-none-eabi-objcopy  -O binary  003InternalLEDs.elf  "003InternalLEDs.bin"
-arm-none-eabi-size   003InternalLEDs.elf 
+arm-none-eabi-objdump -h -S  004led_toggle_bitfields.elf  > "004led_toggle_bitfields.list"
+arm-none-eabi-objcopy  -O binary  004led_toggle_bitfields.elf  "004led_toggle_bitfields.bin"
+arm-none-eabi-size   004led_toggle_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename
-   1192	      8	   1568	   2768	    ad0	003InternalLEDs.elf
+   1024	      8	   1568	   2600	    a28	004led_toggle_bitfields.elf
 Finished building: default.size.stdout
  
-Finished building: 003InternalLEDs.list
-Finished building: 003InternalLEDs.bin
+Finished building: 004led_toggle_bitfields.bin
+Finished building: 004led_toggle_bitfields.list
  
  
-20:22:41 **** Incremental Build of configuration Debug for project 003InternalLEDs ****
+18:37:50 **** Incremental Build of configuration Debug for project 004led_toggle_bitfields ****
 make -j8 all 
-arm-none-eabi-size   003InternalLEDs.elf 
+arm-none-eabi-size   004led_toggle_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename
-   1192	      8	   1568	   2768	    ad0	003InternalLEDs.elf
+   1024	      8	   1568	   2600	    a28	004led_toggle_bitfields.elf
 Finished building: default.size.stdout
  
