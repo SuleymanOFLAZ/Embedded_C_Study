@@ -29,11 +29,11 @@ void delay(void);
 int main(void)
 {
 	// Pointers
-	uint32_t volatile *p_clkPerAHB1	 	= (uint32_t *)0x40023830;
-	uint32_t volatile *p_pinModeGPIOD 	= (uint32_t *)0x40020C00;
-	uint32_t volatile *p_pinOutDataGPIOD = (uint32_t *)0x40020C14;
-	uint32_t volatile *p_pinModeGPIOA	= (uint32_t *)0x40020000;
-	uint32_t volatile *p_pinInDataGPIOA	= (uint32_t *)0x40020010;
+	uint32_t *p_clkPerAHB1	 	= (uint32_t *)0x40023830;
+	uint32_t *p_pinModeGPIOD 	= (uint32_t *)0x40020C00;
+	uint32_t *p_pinOutDataGPIOD = (uint32_t *)0x40020C14;
+	uint32_t *p_pinModeGPIOA	= (uint32_t *)0x40020000;
+	uint32_t *p_pinInDataGPIOA	= (uint32_t *)0x40020010;
 
 	//Masks
 	uint32_t m_pinMode 	= 0x55000000;
@@ -52,10 +52,17 @@ int main(void)
 	*p_pinModeGPIOA	= *p_pinModeGPIOA & ~(0x00000003); 						// setting the PA0 in
 	//*p_pinOutDataGPIOD 	= *p_pinOutDataGPIOD | m_setPin;
 
+	uint8_t check = 0, go = 0;
 
 	/* Loop forever */
 	while(1){
-		while( (*p_pinInDataGPIOA & m_rdPinPA0) ){
+		if((*p_pinInDataGPIOA & m_rdPinPA0) == check){
+			go = 1;
+			check = (uint8_t)(*p_pinInDataGPIOA & m_rdPinPA0);
+		}
+		else
+			go = 0;
+		if( go ){
 			*p_pinOutDataGPIOD 	= *p_pinOutDataGPIOD | m_setPin12;
 			delay();
 			*p_pinOutDataGPIOD 	= *p_pinOutDataGPIOD & ~(m_setPin12);
@@ -97,6 +104,6 @@ int main(void)
 }
 
 void delay(void){
-	for(volatile long i= 0; i<300000;i++);
+	for(long i= 0; i<100000;i++);
 }
 

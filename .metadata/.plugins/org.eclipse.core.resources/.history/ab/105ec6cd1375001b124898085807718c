@@ -29,11 +29,11 @@ void delay(void);
 int main(void)
 {
 	// Pointers
-	uint32_t volatile *p_clkPerAHB1	 	= (uint32_t *)0x40023830;
-	uint32_t volatile *p_pinModeGPIOD 	= (uint32_t *)0x40020C00;
-	uint32_t volatile *p_pinOutDataGPIOD = (uint32_t *)0x40020C14;
-	uint32_t volatile *p_pinModeGPIOA	= (uint32_t *)0x40020000;
-	uint32_t volatile *p_pinInDataGPIOA	= (uint32_t *)0x40020010;
+	uint32_t *p_clkPerAHB1	 	= (uint32_t *)0x40023830;
+	uint32_t *p_pinModeGPIOD 	= (uint32_t *)0x40020C00;
+	uint32_t *p_pinOutDataGPIOD = (uint32_t *)0x40020C14;
+	uint32_t *p_pinModeGPIOA	= (uint32_t *)0x40020000;
+	uint32_t *p_pinInDataGPIOA	= (uint32_t *)0x40020010;
 
 	//Masks
 	uint32_t m_pinMode 	= 0x55000000;
@@ -51,7 +51,6 @@ int main(void)
 	*p_pinModeGPIOD = *p_pinModeGPIOD | m_pinMode; 			// Setting the PA12, PA13, PA14, PA15 pins out
 	*p_pinModeGPIOA	= *p_pinModeGPIOA & ~(0x00000003); 						// setting the PA0 in
 	//*p_pinOutDataGPIOD 	= *p_pinOutDataGPIOD | m_setPin;
-
 
 	/* Loop forever */
 	while(1){
@@ -97,6 +96,6 @@ int main(void)
 }
 
 void delay(void){
-	for(volatile long i= 0; i<300000;i++);
+	for(long i= 0; i<100000;i++);
 }
 

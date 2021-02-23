@@ -97,6 +97,6 @@ int main(void)
 }
 
 void delay(void){
-	for(volatile long i= 0; i<300000;i++);
+	for(volatile long i= 0; i<100000;i++);
 }
 
