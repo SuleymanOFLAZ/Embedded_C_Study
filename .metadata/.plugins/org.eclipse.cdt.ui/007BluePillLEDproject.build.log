@@ -1,0 +1,10 @@
+17:40:35 **** Incremental Build of configuration Debug for project 007BluePillLEDproject ****
+make -j8 all 
+arm-none-eabi-size   007BluePillLEDproject.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	007BluePillLEDproject.elf
+Finished building: default.size.stdout
+ 
+
+17:40:35 Build Finished. 0 errors, 0 warnings. (took 264ms)
+

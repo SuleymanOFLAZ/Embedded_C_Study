@@ -1,0 +1,10 @@
+14:13:49 **** Incremental Build of configuration Debug for project 008changeSPtoPSP ****
+make -j8 all 
+arm-none-eabi-size   008changeSPtoPSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5240	    108	   1580	   6928	   1b10	008changeSPtoPSP.elf
+Finished building: default.size.stdout
+ 
+
+14:13:49 Build Finished. 0 errors, 0 warnings. (took 273ms)
+

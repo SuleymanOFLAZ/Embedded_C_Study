@@ -1,0 +1,20 @@
+22:01:31 **** Incremental Build of configuration Debug for project 006keyboard2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -o "006keyboard2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\suley\OneDrive\Belgeler\Embedded-C\My_workspace\target\006keyboard2\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="006keyboard2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 006keyboard2.elf
+ 
+arm-none-eabi-size   006keyboard2.elf 
+arm-none-eabi-objdump -h -S  006keyboard2.elf  > "006keyboard2.list"
+arm-none-eabi-objcopy  -O binary  006keyboard2.elf  "006keyboard2.bin"
+   text	   data	    bss	    dec	    hex	filename
+   3960	    108	   1580	   5648	   1610	006keyboard2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 006keyboard2.bin
+Finished building: 006keyboard2.list
+ 
+ 
+
+22:01:32 Build Finished. 0 errors, 0 warnings. (took 988ms)
+

@@ -89,10 +89,10 @@ int main(void)
 	RCC_AHB1ENR_t volatile *const restrict pPeripClk 	= (RCC_AHB1ENR_t *)	0x40023830;
  80001ee:	4b4a      	ldr	r3, [pc, #296]	; (8000318 <main+0x130>)
  80001f0:	60fb      	str	r3, [r7, #12]
-	GPIOx_MODER_t volatile *const restrict pGPIOD_mode 	= (GPIOx_MODER_t *)	0x040020C00;
+	GPIOx_MODER_t volatile *const restrict pGPIOD_mode 	= (GPIOx_MODER_t *)	0x40020C00;
  80001f2:	4b4a      	ldr	r3, [pc, #296]	; (800031c <main+0x134>)
  80001f4:	60bb      	str	r3, [r7, #8]
-	GPIOx_ODR_t   volatile *const restrict pGPIOD_odr 	= (GPIOx_ODR_t *)	0x040020C14;
+	GPIOx_ODR_t   volatile *const restrict pGPIOD_odr 	= (GPIOx_ODR_t *)	0x40020C14;
  80001f6:	4b4a      	ldr	r3, [pc, #296]	; (8000320 <main+0x138>)
  80001f8:	607b      	str	r3, [r7, #4]
 

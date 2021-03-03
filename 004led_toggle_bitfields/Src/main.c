@@ -27,8 +27,8 @@ void delay(void);
 int main(void)
 {
 	RCC_AHB1ENR_t volatile *const restrict pPeripClk 	= (RCC_AHB1ENR_t *)	0x40023830;
-	GPIOx_MODER_t volatile *const restrict pGPIOD_mode 	= (GPIOx_MODER_t *)	0x040020C00;
-	GPIOx_ODR_t   volatile *const restrict pGPIOD_odr 	= (GPIOx_ODR_t *)	0x040020C14;
+	GPIOx_MODER_t volatile *const restrict pGPIOD_mode 	= (GPIOx_MODER_t *)	0x40020C00;
+	GPIOx_ODR_t   volatile *const restrict pGPIOD_odr 	= (GPIOx_ODR_t *)	0x40020C14;
 
 	// Setting the RCC peripheral register
 	pPeripClk->gpiod_en = 1;
