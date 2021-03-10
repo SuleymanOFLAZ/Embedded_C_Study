@@ -1,0 +1,10 @@
+17:35:14 **** Incremental Build of configuration Debug for project 011FaultExceptionsAndAnalysis ****
+make -j8 all 
+arm-none-eabi-size   011FaultExceptionsAndAnalysis.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5920	    108	   1580	   7608	   1db8	011FaultExceptionsAndAnalysis.elf
+Finished building: default.size.stdout
+ 
+
+17:35:14 Build Finished. 0 errors, 0 warnings. (took 315ms)
+

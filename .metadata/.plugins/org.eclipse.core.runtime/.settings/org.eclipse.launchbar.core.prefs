@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000EmbeddedHelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002Add Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002Add,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003InternalLEDs,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004led_toggle_bitfields,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006keyboard2,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007BitBanding,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008changeSPtoPSP,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:009usart3_Interrupt
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000EmbeddedHelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002Add Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002Add,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003InternalLEDs,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004led_toggle_bitfields,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006keyboard2,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007BitBanding,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008changeSPtoPSP,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:009usart3_Interrupt,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:010InterruptPriorityConfiguration,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011FaultExceptionsAndAnalysis
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000EmbeddedHelloWorld\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:000EmbeddedHelloWorld\ Debug/activeLaunchTarget=null\:---
@@ -12,6 +12,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004led_toggle_bitfields/activeL
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005keyboard2x2/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005keyboard2x2/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006keyboard2/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011FaultExceptionsAndAnalysis/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:000EmbeddedHelloWorld\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:000EmbeddedHelloWorld\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:005keyboard2x2\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
